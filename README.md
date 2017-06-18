@@ -105,3 +105,39 @@ To disable the touch input
 
 ```java
 graph.setDrawUserTouchPointEnabled(boolean enabled);
+```
+
+### Styling options
+
+```xml
+...
+xmlns:graph="http://schemas.android.com/apk/res-auto"
+...
+
+
+<com.velli20.materialunixgraph.LineGraph
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="16dp"
+        
+        graph:drawTimeLabelsIn24hourMode="true"  
+        graph:graphFrameColor="#e0e0e0"
+        graph:verticalAxisLabelColor="#9e9e9e"
+        graph:horizontalAxisLabelColor="#9e9e9e"
+        graph:graphFrameStrokeWidth="1dp"
+        graph:verticalAxisLabelTextSize="12sp"
+        graph:horizontalAxisLabelTextSize="14sp"
+        graph:maxVerticalAxisValue="120"
+        graph:minVerticalAxisValue="0"
+        graph:maxVerticalAxisCount="4"
+        graph:verticalAxisValueLabel=" EUROS"
+        graph:dialogOutlineColor="#757575"
+        graph:dialogBackgroundColor="#FFFFFF"
+        graph:linePointRadius="3dp"
+        graph:lineTouchedPointRadius="6dp"
+        graph:drawLineTouchedPointIndicatorLine="true"
+        graph:lineTouchedPointColor="#00b0ff"
+        graph:lineTouchedPointIndicatorLineColor="#757575"/>
+
+```
