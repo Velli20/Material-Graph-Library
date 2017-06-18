@@ -8,6 +8,11 @@ Features:
 
 ![Screenshots](https://user-images.githubusercontent.com/25138671/27264059-4dfae056-547f-11e7-9b32-644e6c5cd613.jpg)
 
+## Sample
+<a href="https://play.google.com/store/apps/details?id=com.velli20.sample" target="_blank">
+  <img alt="Get it on Google Play"
+       src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="60"/>
+</a>
 
 ## Usage
 
