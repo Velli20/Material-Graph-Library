@@ -47,6 +47,8 @@ Basic line drawing:
 
 ```java
 static final int GRAPH_MAX_VERTICAL_VALUE = 120;
+Random mRandom = new Random();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
