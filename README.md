@@ -47,11 +47,10 @@ Basic line drawing:
 
 ```java
 static final int GRAPH_MAX_VERTICAL_VALUE = 120;
-Random mRandom = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        ...
         LineGraph graph = (LineGraph) findViewById(R.id.graph);
 
         long unixTimeNow = System.currentTimeMillis();
@@ -70,13 +69,13 @@ Random mRandom = new Random();
         
      public Line getDummyLine(long startDateInMillis, long endDateInMillis, boolean showPoints) {
         Line line = new Line();
+        Random random = new Random();
 
-        /* Create y-axis points for the line */
         LinePoint point;
         for (int i = 0; i < 10; i++) {
             long x = startDateInMillis + (((endDateInMillis - startDateInMillis) / 10) * i);
 
-            point = new LinePoint(x, mRandom.nextInt(GRAPH_MAX_VERTICAL_VALUE));
+            point = new LinePoint(x, random.nextInt(GRAPH_MAX_VERTICAL_VALUE));
             point.setDrawPoint(showPoints);
 
             line.addPoint(point);
