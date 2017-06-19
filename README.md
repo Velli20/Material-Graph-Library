@@ -99,9 +99,9 @@ graph.setOnLinePointTouchListener(new OnLinePointTouchListener() {
                 /* User has clicked a point on the graph. Create a dialog to show above the touched point */
 
                 LinePointDialog dialog = new LinePointDialog(point.getX(), point.getY());
-                dialog.setTitle("Pseudo-Random value");
+                dialog.setTitle("Title of the dialog");
                 dialog.setTitleColor(Color.parseColor("#00b0ff"));
-                dialog.setContentText(String.format(Locale.getDefault(), "%s\n%.2f €", getTimeLabel(point.getX()), point.getY()));
+                dialog.setContentText("Multiline content\ntext");
                 dialog.setContentColor(Color.parseColor("#9e9e9e"));
                 graph.drawDialog(dialog);
             }
